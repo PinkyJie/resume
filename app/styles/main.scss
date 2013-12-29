@@ -2,7 +2,8 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
 @import 'compass';
-@import 'font-awesome/scss/font-awesome.scss';
+$fa-font-path: '/bower_components/font-awesome/fonts';
+@import 'font-awesome/scss/font-awesome';
 
 /* google font */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
