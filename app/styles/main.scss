@@ -1,7 +1,6 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
-@import 'compass';
 $fa-font-path: '/bower_components/font-awesome/fonts';
 @import 'font-awesome/scss/font-awesome';
 
@@ -15,15 +14,11 @@ $fa-font-path: '/bower_components/font-awesome/fonts';
 
 .title-shadow {
   color: #211d1e;
-  @include text-shadow(0 2px 0 #c1c5c6);
+  text-shadow: 0 2px 0 #c1c5c6;
 }
 
 /* gray img */
 .gray-img {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
   filter: grayscale(100%);
   filter: gray;
 }
@@ -47,13 +42,13 @@ $fa-font-path: '/bower_components/font-awesome/fonts';
       width: 25px;
       height: 25px;
       display: inline-block;
-      @include box-shadow(0 2px 0 #d2dfdf);
+      box-shadow: 0 2px 0 #d2dfdf;
       margin-left: 2px;
       text-align: center;
       background-color: #ecf0f1;
-      @include border-radius(25px);
+      border-radius: 25px;
       padding: 6px 5px;
-      @include transition(all 100ms ease-out);
+      transition: all 100ms ease-out;
       &:hover {
         background-color: #0a8bb0;
         cursor: pointer;
@@ -61,8 +56,8 @@ $fa-font-path: '/bower_components/font-awesome/fonts';
       a {
         color: #a8a8a8;
         font-size: 16px;
-        @include text-shadow(none);
-        @include transition(all 100ms ease-out);
+        text-shadow: none;
+        transition: all 100ms ease-out;
         text-decoration: none;
         display: block;
       }
@@ -81,8 +76,8 @@ body {
   margin: 50px auto;
   background-color: #ecf0f1;
   padding: 20px 20px 50px 20px;
-  @include box-shadow(0 0 7px #6e6e6e);
-  @include border-radius(5px);
+  box-shadow: 0 0 7px #6e6e6e;
+  border-radius: 5px;
   @media all and (min-width: 1100px) {
     width: 1024px;
   }
@@ -98,9 +93,9 @@ section {
     position: relative;
     background-color: #fff;
     padding: 15px;
-    @include border-radius(5px);
-    @include box-shadow(2px 2px 0 0 #d8d8d8);
-    @include background-image(linear-gradient(bottom, #f2f2f2 0%, #ffffff 19%));
+    border-radius: 5px;
+    box-shadow: 2px 2px 0 0 #d8d8d8;
+    background-image: linear-gradient(bottom, #f2f2f2 0%, #ffffff 19%);
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f2f2f2), color-stop(0.19, #ffffff));
     &:before {
       content: "";
@@ -116,18 +111,18 @@ section {
   }
   .section-icon {
     padding: 15px 10px 10px;
-    @include border-radius(100px);
+    border-radius: 100px;
     background-color: #0a8bb0;
     border: 5px solid #fbf6fa;
-    @include box-shadow(0 3px 0 #c0c4c5);
+    box-shadow: 0 3px 0 #c0c4c5;
     text-align: center;
     height: 70px;
     margin: 30px 0 0;
     width: 70px;
-    @include transition(all 200ms ease-out);
+    transition: all 200ms ease-out;
     i {
       color: #feffff;
-      @include text-shadow(0 -1px 0 #c0c4c5);
+      text-shadow: 0 -1px 0 #c0c4c5;
       font-size: 30px;
     }
   }
@@ -152,8 +147,8 @@ section {
   }
   .head-title {
     background-color: #0a8bb0;
-    @include box-shadow(0 3px 0 #00789f);
-    @include border-radius(0 0 5px 5px);
+    box-shadow: 0 3px 0 #00789f;
+    border-radius: 0 0 5px 5px;
     margin-bottom: 20px;
     text-align: center;
     padding: 10px;
@@ -161,7 +156,7 @@ section {
       margin: 0 0 5px 0;
       line-height: 36px;
       color: #f8f8f8;
-      @include text-shadow(0 2px 0 #00789f);
+      text-shadow: 0 2px 0 #00789f;
       @extend .title-font;
     }
     h3 {
@@ -169,17 +164,17 @@ section {
       color: #f8f8f8;
       line-height: 24px;
       font-size: 19px;
-      @include text-shadow(0 2px 0 #00789f);
+      text-shadow: 0 2px 0 #00789f;
       @extend .title-font;
     }
   }
 
   .nav-menu {
-    @include box-shadow(0 3px 0 #d2dfdf);
+    box-shadow: 0 3px 0 #d2dfdf;
     margin-top: 1px;
     background-color: #f8fafa;
     padding: 10px;
-    @include border-radius(0 0 5px 5px);
+    border-radius: 0 0 5px 5px;
     ul {
       margin: 0;
     }
@@ -206,7 +201,7 @@ section {
             a, a:hover, a:focus {
               background-color: #0a8bb0 !important;
               color: #f8f8f8 !important;
-              @include text-shadow(0 2px 0 #00789f);
+              text-shadow: 0 2px 0 #00789f;
             }
           }
         }
@@ -244,11 +239,11 @@ section {
   .avatar {
     width: 200px;
     height: 200px;
-    @include transition(all 100ms ease-out);
-    @include box-shadow(0 3px 0 #dfdfdf);
+    transition: all 100ms ease-out;
+    box-shadow: 0 3px 0 #dfdfdf;
     border: 5px solid #0a8bb0;
     overflow: hidden;
-    @include border-radius(200px);
+    border-radius: 200px;
     &:hover {
       opacity: 0.8;
     }
@@ -256,7 +251,7 @@ section {
       margin-top: -5px;
       margin-left: -5px;
       overflow: hidden;
-      @include border-radius(200px);
+      border-radius: 200px;
     }
     @media all and (min-width: 1px) and (max-width: 800px) {
       margin: auto;
@@ -267,20 +262,20 @@ section {
       font-family: "Verdana", "Microsoft YaHei";
       padding: 10px;
       background-color: #ecf0f1;
-      @include border-radius(5px);
-      @include box-shadow(0 2px 0 #e0e7e9);
+      border-radius: 5px;
+      box-shadow: 0 2px 0 #e0e7e9;
     }
   }
   .round-rows {
     margin: 0;
     list-style: none;
     .round-row {
-      @include box-shadow(0 2px 0 #e0e7e9);
+      box-shadow: 0 2px 0 #e0e7e9;
       font-size: 16px;
-      @include transition(all 100ms ease-out);
+      transition: all 100ms ease-out;
       font-weight: bold;
       background-color: #ecf0f1;
-      @include border-radius(100px);
+      border-radius: 100px;
       padding: 5px 10px;
       margin-top: 7px;
       display: inline-block;
