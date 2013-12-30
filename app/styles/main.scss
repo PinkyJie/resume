@@ -1,7 +1,7 @@
-$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+$icon-font-path: "../bower_components/sass-bootstrap/fonts/";
+$fa-font-path: '../bower_components/font-awesome/fonts/';
 
 @import 'sass-bootstrap/lib/bootstrap';
-$fa-font-path: '/bower_components/font-awesome/fonts';
 @import 'font-awesome/scss/font-awesome';
 
 /* google font */
