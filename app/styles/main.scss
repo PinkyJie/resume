@@ -133,7 +133,7 @@ body {
 }
 
 section {
-  margin-top: 20px;
+  margin-top: 10px;
   &:first-child {
     margin-top: 0;
   }
@@ -145,7 +145,6 @@ section {
     border-radius: 5px;
     box-shadow: 2px 2px 0 0 #d8d8d8;
     background-image: linear-gradient(bottom, #f2f2f2 0%, #ffffff 19%);
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f2f2f2), color-stop(0.19, #ffffff));
     &:before {
       content: "";
       position: absolute;
@@ -222,7 +221,7 @@ section {
     box-shadow: 0 3px 0 #d2dfdf;
     margin-top: 1px;
     background-color: #f8fafa;
-    padding: 10px;
+    padding: 5px;
     border-radius: 0 0 5px 5px;
     ul {
       margin: 0;
@@ -242,7 +241,7 @@ section {
           display: inline-block;
           float: none;
           a {
-            padding: 10px 7px;
+            padding: 5px 8px;
             color: #3b3b3b;
             font-size: 18px;
           }
@@ -269,7 +268,10 @@ section {
         }
       }
       &.splited {
+        opacity: 0.9;
         z-index: 9999;
+        position: fixed;
+        top: -1px;
         left: 0;
         right: 0;
         margin: auto;
@@ -427,7 +429,63 @@ section {
 }
 
 #skill {
-
+  @extend .title-font;
+  ul {
+    padding-left: 20px;
+    margin-top: 10px;
+    list-style: none;
+    li {
+      > span {
+        @extend .title-shadow;
+        margin-top: -3px;
+        float: left;
+        width: 100px;
+      }
+      > .progress {
+        height: 15px;
+        margin-bottom: 10px;
+        span {
+          @extend .pull-right;
+          line-height: 15px;
+          padding-right: 2px;
+        }
+      }
+    }
+  }
+  .cat-title {
+    margin-bottom: 10px;
+    background-image: linear-gradient(left, #ccccff, #ecf0f1);
+    border-radius: 5px;
+    i {
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      border-radius: 5px 0 0 5px;
+      padding: 5px;
+      font-size: 20px;
+      background-color: #5bc0de;
+      color: #ffffff;
+    }
+    span {
+      font-size: 16px;
+    }
+  }
+  .sub-cat-title {
+    margin-bottom: 8px;
+    display: inline;
+    i {
+      color: #5bc0de;
+      font-size: 18px;
+    }
+    span {
+      font-size: 15px;
+    }
+  }
+  .skill-body {
+    > span.label {
+      line-height: 2.5em;
+    }
+  }
 }
 
 
