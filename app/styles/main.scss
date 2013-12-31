@@ -488,5 +488,20 @@ section {
   }
 }
 
-
+#life {
+  .map-wrapper {
+    margin-right: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 0 #00789f;
+    border: 5px solid #0a8bb0;
+    border-radius: 5px;
+    #map {
+      width: 320px;
+      height: 335px;
+    }
+  }
+  .photo-wrapper {
+    @extend .map-wrapper;
+  }
+}
 

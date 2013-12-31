@@ -1,3 +1,4 @@
+/*global jQuery, GMaps */
 (function($){
     'use strict';
     function init() {
@@ -33,6 +34,17 @@
                 scrollTop: $(ele).offset().top - 30
             }, 1500, 'easeInOutExpo');
         }
+        // map
+        var map = new GMaps({
+            div: '#map',
+            lat: 31.259068,
+            lng: 121.456105
+        });
+        map.addMarker({
+            lat: 31.259068,
+            lng: 121.456105,
+            title: 'It\'s Me!'
+        });
     }
 
     $(init);

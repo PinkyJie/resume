@@ -6,7 +6,8 @@
     "modernizr": "~2.6.2",
     "jquery": "~1.10.2",
     "font-awesome": "~4.0.3",
-    "jquery.easing": "~1.3.0"
+    "jquery.easing": "~1.3.0",
+    "gmaps": "~0.4.9"
   },
   "devDependencies": {}
 }
