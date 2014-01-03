@@ -7,6 +7,7 @@ $fa-font-path: '../bower_components/font-awesome/fonts/';
 /* google font */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
 
+/* for global extend */
 .title-font {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: normal !important;
@@ -35,7 +36,7 @@ $fa-font-path: '../bower_components/font-awesome/fonts/';
   padding: 0.2em 0;
 }
 
-.social-icons {
+.social-icons, .pro-icons {
   text-align: center;
   ul {
     list-style: none;
@@ -334,7 +335,7 @@ section {
   }
 }
 
-.edu-wrapper, .emp-wrapper {
+.edu-wrapper, .emp-wrapper, .pro-wrapper {
   background-color: #ecf0f1;
   border-radius: 5px;
   box-shadow: 0 2px 0 #e0e7e9;
@@ -488,6 +489,75 @@ section {
   }
 }
 
+#project {
+  .col-md-4 {
+    .pro-wrapper {
+      margin-top: 10px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  .head {
+    i {
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      font-size: 40px;
+      color: #ffcc99;
+    }
+    .date-range {
+      font-size: 12px;
+    }
+    h3 {
+      line-height: 20px;
+      font-size: 18px;
+    }
+    h4 {
+      line-height: 18px;
+      font-size: 15px;
+    }
+  }
+  .body {
+    .pro-labels {
+      padding-bottom: 5px;
+      border-bottom: 1px solid #cccccc;
+      margin-bottom: 5px;
+      span.label {
+        line-height: 22px;
+      }
+    }
+    p {
+      @extend .content-font;
+    }
+    .pro-icons {
+      height: 35px;
+      border-top: 1px solid #cccccc;
+      ul {
+        margin-top: 3px;
+        margin-bottom: 2px;
+        li {
+          background-color: #cccccc;
+          padding: 2px 3px;
+          &:hover {
+            background-color: #428bca;
+          }
+          a {
+            &:hover {
+              color: #ffffff;
+            }
+            color: #428bca;
+          }
+        }
+      }
+      .github-star {
+        float: left;
+        margin-top: 4px;
+      }
+    }
+  }
+}
+
 #life {
   .map-wrapper {
     margin-right: 5px;
@@ -496,7 +566,7 @@ section {
     border: 5px solid #0a8bb0;
     border-radius: 5px;
     #map {
-      width: 320px;
+      width: 329px;
       height: 335px;
     }
   }
