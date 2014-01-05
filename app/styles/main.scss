@@ -24,8 +24,9 @@ $fa-font-path: '../bower_components/font-awesome/fonts/';
 
 /* gray img */
 .gray-img {
-  filter: grayscale(100%);
-  filter: gray;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
 }
 
 /* page */
@@ -145,7 +146,7 @@ section {
     padding: 15px;
     border-radius: 5px;
     box-shadow: 2px 2px 0 0 #d8d8d8;
-    background-image: linear-gradient(bottom, #f2f2f2 0%, #ffffff 19%);
+    background-image: linear-gradient(to bottom, #f2f2f2 0%, #ffffff 19%);
     &:before {
       content: "";
       position: absolute;
@@ -455,7 +456,7 @@ section {
   }
   .cat-title {
     margin-bottom: 10px;
-    background-image: linear-gradient(left, #ccccff, #ecf0f1);
+    background-image: linear-gradient(to left, #ccccff, #ecf0f1);
     border-radius: 5px;
     i {
       width: 30px;
