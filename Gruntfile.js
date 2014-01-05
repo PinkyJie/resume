@@ -170,7 +170,7 @@ module.exports = function (grunt) {
         // Add vendor prefixed styles
         autoprefixer: {
             options: {
-                browsers: ['last 2 versions']
+                browsers: ['last 3 versions', 'ie 9']
             },
             dist: {
                 files: [{
@@ -185,7 +185,7 @@ module.exports = function (grunt) {
         // Automatically inject Bower components into the HTML file
         'bower-install': {
             app: {
-                html: '<%= yeoman.app %>/index.html',
+                html: '<%= yeoman.app %>/*.html',
                 ignorePath: '<%= yeoman.app %>/'
             }
         },
@@ -211,7 +211,7 @@ module.exports = function (grunt) {
             options: {
                 dest: '<%= yeoman.dist %>'
             },
-            html: '<%= yeoman.app %>/index.html'
+            html: '<%= yeoman.app %>/*.html'
         },
 
         // Performs rewrites based on rev and the useminPrepare configuration

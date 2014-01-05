@@ -9,7 +9,7 @@ $fa-font-path: '../bower_components/font-awesome/fonts/';
 
 /* for global extend */
 .title-font {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans Condensed', "Microsoft YaHei";
   font-weight: normal !important;
 }
 
@@ -572,6 +572,9 @@ section {
   }
   .photo-wrapper {
     @extend .map-wrapper;
+    h3 {
+      @extend .title-font;
+    }
   }
 }
 
