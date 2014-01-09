@@ -38,6 +38,9 @@ $fa-font-path: '../bower_components/font-awesome/fonts/';
 }
 
 .social-icons, .pro-icons {
+  @media all and (max-width: 800px) {
+    padding-bottom: 10px;
+  }
   text-align: center;
   ul {
     list-style: none;
@@ -72,6 +75,9 @@ $fa-font-path: '../bower_components/font-awesome/fonts/';
 }
 
 .round-rows {
+  @media all and (max-width: 800px) {
+    padding-left: 0;
+  }
   margin: 0;
   list-style: none;
   .round-row {
@@ -120,6 +126,9 @@ body {
   background-color: #f6f8f7;
   margin: 0;
   padding: 0;
+  @media all and (max-width: 800px) {
+    margin-right: -65px; /* dirty fix */
+  }
 }
 
 .resume-wrapper {
@@ -135,6 +144,9 @@ body {
 }
 
 section {
+  > .row > .col-md-1 {
+    text-align: center;
+  }
   margin-top: 10px;
   &:first-child {
     margin-top: 0;
@@ -157,6 +169,9 @@ section {
       border-style: solid;
       border-width: 10px 10px 10px 0;
       border-color: transparent #fff transparent transparent;
+      @media all and (max-width: 800px) {
+        display: none;
+      }
     }
   }
   .section-icon {
@@ -177,6 +192,7 @@ section {
     }
   }
   .section-title {
+    display: inline-block;
     .title {
       width: 70px;
       text-align: center;
@@ -225,6 +241,9 @@ section {
     background-color: #f8fafa;
     padding: 5px;
     border-radius: 0 0 5px 5px;
+    @media all and (max-width: 800px) {
+      border-radius: 5px;
+    }
     ul {
       margin: 0;
     }
@@ -257,8 +276,10 @@ section {
         }
       }
       &.dropdown {
+        font-size: 20px;
         display: 90%;
         margin: 0 auto;
+        width: 80%;
         @media all and (min-width: 801px) {
           display: none;
         }
@@ -270,6 +291,7 @@ section {
         }
       }
       &.splited {
+        width: 100%;
         opacity: 0.9;
         z-index: 9999;
         position: fixed;
@@ -288,6 +310,9 @@ section {
   }
 
   .lang-icons {
+    @media all and (max-width: 800px) {
+      padding-top: 5px;
+    }
     text-align: center;
     ul {
       margin-left: -40px;
@@ -297,6 +322,9 @@ section {
         display: inline;
         img {
           width: 32px;
+        }
+        @media all and (max-width: 800px) {
+          margin-right: 5px;
         }
       }
     }
@@ -500,6 +528,14 @@ section {
     }
   }
   .head {
+    > .row {
+      > .col-md-2:first-child {
+        display: inline-block;
+      }
+      > .col-md-8 {
+        display: inline-block;
+      }
+    }
     i {
       width: 40px;
       height: 40px;
@@ -509,6 +545,10 @@ section {
     }
     .date-range {
       font-size: 12px;
+      @media all and (max-width: 800px) {
+        float: none;
+        margin-top: 1px;
+      }
     }
     h3 {
       line-height: 20px;
@@ -566,6 +606,7 @@ section {
     box-shadow: 0 3px 0 #00789f;
     border: 5px solid #0a8bb0;
     border-radius: 5px;
+    overflow: hidden;
     #map {
       width: 329px;
       height: 335px;
@@ -579,3 +620,14 @@ section {
   }
 }
 
+.github-fork {
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+  }
+  @media all and (max-width: 800px) {
+    display: none;
+  }
+}
