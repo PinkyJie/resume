@@ -656,3 +656,27 @@ section {
     display: none;
   }
 }
+
+.float-icons {
+  position: fixed;
+  right: 5px;
+  top: 40%;
+  z-index: 999;
+  .float-icon {
+    margin-top: 10px;
+    text-align: center;
+    img {
+      width: 64px;
+      display: block;
+    }
+    &:hover {
+      opacity: 0.8;
+      border: 1px solid #999;
+      border-radius: 5px;
+      box-shadow: 2px 2px 0 0 #d8d8d8;
+    }
+  }
+  @media all and (max-width: 992px) {
+    display: none;
+  }
+}
