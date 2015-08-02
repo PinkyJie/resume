@@ -7,6 +7,16 @@ Theme by [Flatty Resume](http://amindiary.com/demo/flatty-cv/)
 
 Built with [Yeoman](http://yeoman.io/)
 
+Build
+========
+* Install Node and Ruby
+* `npm install -g bower grunt-cli`
+  `gem install compass`
+* `bower install`
+* `npm install`
+* `grunt serve` for preview
+* `grunt build` for build
+
 Fork me
 ========
 
