@@ -16,7 +16,7 @@ Built with [Yeoman](http://yeoman.io/)
 ### Build
 
 * Install Node and Ruby
-* `gem install compass`
+* `npm install -g grunt-cli` and `gem install compass`
 * `npm run bower`
 * `npm install`
 * `npm start` for live reload preview

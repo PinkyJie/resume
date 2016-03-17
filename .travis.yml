@@ -6,6 +6,7 @@ node_js:
   - stable
 before_install:
   - rvm install 2.1.5
+  - npm install -g grunt-cli
 install:
   - gem install compass
   - npm install
