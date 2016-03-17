@@ -20,7 +20,7 @@ insert_final_newline = true
 [*.md]
 trim_trailing_whitespace = false
 
-[*.{jade,json,scss}]
+[*.{jade,json,scss,yml}]
 indent_size = 2
 
 

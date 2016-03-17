@@ -1,0 +1,19 @@
+branches:
+  only:
+    - master
+language: node_js
+node_js:
+  - stable
+before_install:
+  - rvm install 2.1.5
+install:
+  - gem install compass
+  - npm install
+  - bower install
+script:
+  - ./publish-to-gh-pages.sh
+after_success:
+env:
+  global:
+    - GitHub_REF: github.com/PinkyJie/resume.git
+    - secure: "V22Oa67a3cFxuHu/Q03+JjgEYzAPXdzLYWfMhR+u4kw4HuqVXntMxyt0xK9Uk0k/ALZSjCGMMcPQ1fuOquJ8456IBhoLT9LLQWx97MUAW5tfKmQzxdv62T7PpyRbGJhu9MHZt5QnirIkr90fDJWj7+79k760HXQXt/6vEywWkiw="

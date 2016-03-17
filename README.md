@@ -7,20 +7,26 @@ Theme by [Flatty Resume](http://amindiary.com/demo/flatty-cv/)
 
 Built with [Yeoman](http://yeoman.io/)
 
-Build
-========
+
+### JSON Data Driven
+
+* All templates are put in `app/partials`, these files are just layouts with variables.
+* All Data for different languages are put in `app/i18n`, these files are just plain JSON.
+
+### Build
+
 * Install Node and Ruby
 * `npm install -g bower grunt-cli`
   `gem install compass`
 * `bower install`
 * `npm install`
-* `grunt serve` for preview
-* `grunt build` for build
+* `npm start` for live reload preview
+* `npm run build` for build
 
-Fork me
-========
+### Generate your own Resume
 
-The project has two branches:
+* Fork this project.
+* Change JSON files under folder `app/i18n`.
+* If you don't want include all sections, just delete the `include xxx` in `app/index.jade`.
 
-* [master](https://github.com/PinkyJie/resume/tree/master)  branch for development, change code and run `grunt serve` to preview the page in live-reload, when done, run `grunt build` ready for production
-* [gh-pages](https://github.com/PinkyJie/resume/tree/gh-pages)  branch for production, using the Github naming convention for branch naming, after running `grunt build` in master branch, switch to this branch using `git checkout gh-pages` and run 'build.bat'(easily to transform to Linux platform)
+
