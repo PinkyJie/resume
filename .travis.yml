@@ -9,7 +9,7 @@ before_install:
 install:
   - gem install compass
   - npm install
-  - bower install
+  - npm run bower
 script:
   - ./publish-to-gh-pages.sh
 after_success:

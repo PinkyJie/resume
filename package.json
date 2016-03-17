@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "dependencies": {},
   "devDependencies": {
+    "bower": "^1.7.7",
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.5.0",
     "grunt-bower-install": "~0.7.0",
@@ -30,7 +31,8 @@
   },
   "scripts": {
     "start": "grunt serve",
-    "build": "grunt build"
+    "build": "grunt build",
+    "bower": "bower install"
   },
   "engines": {
     "node": ">=0.12.0"
