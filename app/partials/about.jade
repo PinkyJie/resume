@@ -1,0 +1,42 @@
+section#about
+  .row
+    .col-md-1
+      .section-title
+        .section-icon
+          i.fa.fa-info
+        .title
+          h4= sections.about
+    .col-md-11
+      .box-wrapper
+        .row
+          .col-md-3
+            .avatar
+              img(src='images/avatar.jpg', alt='avatar')
+            .social-icons
+              ul
+                each val in about.socials
+                  li
+                    a.fa(class= val.icon, title= val.linkTitle, target="_blank", href= val.url)
+          .col-md-5.no-padding
+            each val in about.introduction
+              .desc= val
+          .col-md-4
+            ul.round-rows
+              li
+                .round-row
+                  i.fa.fa-map-marker
+                  span= about.location
+              li
+                .round-row
+                  i.fa.fa-check-circle
+                  span= about.hire
+              li
+                .round-row
+                  i.fa.fa-envelope
+                  a(href='mailto:#{about.email}')
+                    span= about.email
+              li
+                .round-row
+                  i.fa.fa-phone
+                  a(href='tel:#{about.phone}')
+                    span= about.phone

@@ -1,0 +1,64 @@
+mixin project-gen(items)
+  each item in items
+    .pro-wrapper
+      .head
+        .row
+          .col-md-2
+            i.fa(class= item.icon)
+          .col-md-8
+            h3= item.name
+          .col-md-2
+            .date-range= item.year
+      .body
+        .pro-labels
+          each lib in item.library
+            span.label.label-primary= lib
+        p
+          ul
+            each val in item.description
+              li= val
+        if item.github || item.links
+          .pro-icons
+            if item.github
+              .github-star
+                iframe(src="http://ghbtns.com/github-btn.html?user=#{item.github.author}&repo=#{item.github.repo}&type=watch&count=true&size=large", allowtransparency="true", frameborder="0", scrolling="0", width="125", height="30")
+            if item.links
+              ul
+                each link in item.links
+                  li
+                    a(title= link.title, href= link.url, target="_blank")
+                      i.fa(class= link.icon)
+
+section#project
+  .row
+    .col-md-1
+      .section-title
+        .section-icon
+          i.fa.fa-rocket
+        .title
+          h4= sections.project
+    .col-md-11
+      .box-wrapper
+        .row
+          .col-md-4
+            +project-gen(project.col1)
+          .col-md-4
+            +project-gen(project.col2)
+          .col-md-4
+            .pro-wrapper
+              .head
+                .row
+                  .col-md-2
+                    i.fa.fa-github-alt
+                  .col-md-8
+                    h3= project.others.text
+                  .col-md-2
+                    .date-range= project.others.year
+              .body
+                p
+                  ul
+                    each item in project.others.repos
+                      li
+                        p= item.repo
+                        .github-star
+                          iframe(src="http://ghbtns.com/github-btn.html?user=#{item.author}&repo=#{item.repo}&type=watch&count=true&size=large", allowtransparency="true", frameborder="0", scrolling="0", width="125", height="30")

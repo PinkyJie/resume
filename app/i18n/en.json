@@ -1,0 +1,364 @@
+{
+  "html": {
+    "title": "Wenbo Jie's Resume",
+    "description": "resume front-end Angular"
+  },
+  "sections": {
+    "header": "HOME",
+    "about": "ABOUT",
+    "education": "EDUCATION",
+    "employment": "EMPLOYMENT",
+    "skill": "SKILL",
+    "project": "PROJECT",
+    "life": "LIFE"
+  },
+  "badge": {
+    "githubLink": "https://github.com/PinkyJie/resume",
+    "languageImageAlt": "切换到中文版",
+    "languageText": "中文版",
+    "languageLink": "./cn.html",
+    "downloadPDFImageAlt": "Download as PDF",
+    "downloadPDFText": "Download",
+    "pdfLink": "WenboJie-frontend-resume.pdf",
+    "pdfName": "WenboJie-frontend-resume"
+  },
+  "header": {
+    "name": "Wenbo Jie",
+    "title": "Front-end Developer"
+  },
+  "about": {
+    "socials": {
+      "blog": {
+        "linkTitle": "Blog",
+        "url": "http://pinkyjie.com",
+        "icon": "fa-rss"
+      },
+      "github": {
+        "linkTitle": "Github",
+        "url": "https://github.com/PinkyJie",
+        "icon": "fa-github"
+      },
+      "twitter": {
+        "linkTitle": "Twitter",
+        "url": "https://twitter.com/PinkyJie",
+        "icon": "fa-twitter"
+      },
+      "weibo": {
+        "linkTitle": "Weibo",
+        "url": "http://weibo.com/pinkyway",
+        "icon": "fa-weibo"
+      },
+      "stackoverflow": {
+        "linkTitle": "StackOverflow",
+        "url": "https://stackoverflow.com/users/689948/pinkyjie",
+        "icon": "fa-stack-overflow"
+      }
+    },
+    "introduction": [
+      "Math (Bachelor) + Computer Science (Master)",
+      "Almost 5 years of Internet industry experience",
+      "More than 3 years of pure front-end experience",
+      "2 years of Angular experience"
+    ],
+    "location": "Shanghai, China",
+    "phone": "(+86) 15216761725",
+    "email": "pinkyjie.gn@gamil.com",
+    "hire": "Available for hire!"
+  },
+  "education": {
+    "universities": [
+      {
+        "name": "East China Univ. of Sci. & Tech.",
+        "location": "Shanghai, China",
+        "year": "2009.9-2012.3",
+        "major": "Applied Computer [Pattern Recognition]",
+        "items": [
+          {
+            "icon": "fa-file-text",
+            "text": "Publication in <a target='_blank', href='http://dl.acm.org/citation.cfm?id=2514403'> Neurocomputing</a>"
+          },
+          {
+            "icon": "fa-file-text",
+            "text": "Publication in <a target='_blank', href='http://dl.acm.org/citation.cfm?id=2401511'> Knowledge-Based Systems</a>"
+          }
+        ]
+      },
+      {
+        "name": "Yangzhou University",
+        "location": "Yangzhou, China",
+        "year": "2005.9-2009.6",
+        "major": "Mathematics",
+        "items": [
+          {
+            "icon": "fa-trophy",
+            "text": "First-class Scholarship Every Year"
+          },
+          {
+            "icon": "fa-trophy",
+            "text": "Third prize of Mathematical Contest in Modeling"
+          }
+        ]
+      }
+    ]
+  },
+  "employment": {
+    "jobs": [
+      {
+        "name": "GreenDot Shanghai",
+        "position": "Front-end Engineer",
+        "year": "2014.5-Now",
+        "description": [
+          "Angular-based online banking system",
+          "Cover both desktop and mobile web",
+          "Architectural improvments",
+          "Build automation tooling"
+        ]
+      },
+      {
+        "name": "Samsung Electronics(China) R&D Center",
+        "position": "Software Engineer (Cloud Computing)",
+        "year": "2012.12-2014.4",
+        "description": [
+          "Cloud computing realted project",
+          "70% of work is related to front-end"
+        ]
+      },
+      {
+        "name": "Zealion Technology",
+        "position": "Software Engineer (Web/Mobile)",
+        "year": "2011.6-2012.9",
+        "description": [
+          "Rich interactive online app",
+          "Follow up full process of project",
+          "Full-stack development"
+        ]
+      }
+    ]
+  },
+  "skill": {
+    "programming": {
+      "text": "Programming",
+      "children": [
+        {
+          "text": "Front-end",
+          "skills": [
+            {
+              "name": "Javascript",
+              "rating": 5
+            },
+            {
+              "name": "HTML",
+              "rating": 3
+            },
+            {
+              "name": "CSS",
+              "rating": 3
+            }
+          ]
+        },
+        {
+          "text": "Backend (scripts)",
+          "skills": [
+            {
+              "name": "Python",
+              "rating": 2
+            },
+            {
+              "name": "Node",
+              "rating": 1
+            }
+          ]
+        }
+      ]
+    },
+    "library": {
+      "text": "Libraries",
+      "children": ["angular", "jade", "stylus", "grunt/gulp", "webpack", "ES6", "karma", "protractor"]
+    },
+    "tooling": {
+      "text": "Tooling",
+      "children": ["GIT", "Mac", "Atom"]
+    },
+    "language": {
+      "text": "English",
+      "children": {
+        "CET4": {
+          "name": "CET4",
+          "text": "566"
+        },
+        "CET6": {
+          "name": "CET6",
+          "text": "459"
+        },
+        "TOEIC": {
+          "name": "TOEIC",
+          "text": "725"
+        },
+        "oral": {
+          "name": "Oral/Written",
+          "text": "Good"
+        }
+      }
+    }
+  },
+  "project": {
+    "col1": [
+      {
+        "icon": "fa-github",
+        "name": "angular1-webpack-starter",
+        "year": "2015.8-Now",
+        "library": ["angular", "ES6", "webpack", "ui-router"],
+        "description": [
+          "Pure directive based development",
+          "100% unit test coverage",
+          "cross browser E2E test with Sauce Labs",
+          "Lazy Load modules",
+          "Continuous Integration with TravisCI"
+        ],
+        "github": {
+          "author": "PinkyJie",
+          "repo": "angular1-webpack-starter"
+        },
+        "links": [
+          {
+            "title": "Demo",
+            "icon": "fa-globe",
+            "url": "http://pinkyjie.com/angular1-webpack-starter/#/"
+          }
+        ]
+      },
+      {
+        "icon": "fa-credit-card",
+        "name": "GoBank/GreenDot",
+        "year": "2014.5-Now",
+        "library": ["angular", "stylus", "jade"],
+        "description": [
+          "Promote component based development",
+          "Promote standard coding style",
+          "migrate from ngRoute to ui-router",
+          "migrate from angular 1.2 to 1.5",
+          "improve grunt build (20min -> 2min)",
+          "Build one-click deployment tooling"
+        ],
+        "links": [
+          {
+            "title": "GoBank Site",
+            "icon": "fa-globe",
+            "url": "https://m.gobank.com"
+          },
+          {
+            "title": "GreenDot Site",
+            "icon": "fa-globe",
+            "url": "https://m.greendot.com"
+          }
+        ]
+      }
+    ],
+    "col2": [
+      {
+        "icon": "fa-cloud",
+        "name": "Cloud Resilience System",
+        "year": "2013.1-2013.12",
+        "library": ["SVG", "web.py", "MongoDB", "AWS"],
+        "description": [
+          "Simulate disasters on cloud infrastructure",
+          "Data visualization using SVG"
+        ]
+      },
+      {
+        "icon": "fa-sitemap",
+        "name": "Fitting Room",
+        "year": "2011.6-2012.3",
+        "library": ["PHP", "Flash", "AR"],
+        "description": [
+          "Virtual online fitting room using AR",
+          "TOP 10 in Taobao App Contest 2012"
+        ],
+        "links": [
+          {
+            "title": "Video Demo",
+            "icon": "fa-video-camera",
+            "url": "http://v.youku.com/v_show/id_XNjU2NjEyMjYw.html"
+          }
+        ]
+      },
+      {
+        "icon": "fa-magic",
+        "name": "Interactive Wish Tree",
+        "year": "2012.6-2012.7",
+        "library": ["Node", "SVG", "socket.io"],
+        "description": [
+          "Tree animation using SVG",
+          "Interaction between iPad and Web page using socket.io",
+          "Control lucky draw with iPad"
+        ],
+        "links": [
+          {
+            "title": "Video Demo",
+            "icon": "fa-video-camera",
+            "url": "http://v.youku.com/v_show/id_XNDIzNTM4MTg0.html"
+          },
+          {
+            "title": "Video Demo",
+            "icon": "fa-video-camera",
+            "url": "http://v.youku.com/v_show/id_XNDIzMTM3Njky.html"
+          },
+          {
+            "title": "Video Demo",
+            "icon": "fa-video-camera",
+            "url": "http://v.youku.com/v_show/id_XNDIzMTIzNDQ4.html"
+          }
+        ]
+      }
+    ],
+    "others": {
+      "text": "Other side projects",
+      "year": "2011.1-Now",
+      "repos": [
+        {
+          "author": "PinkyJie",
+          "repo": "generator-aio-angular"
+        },
+        {
+          "author": "PinkyJie",
+          "repo": "Trister"
+        },
+        {
+          "author": "PinkyJie",
+          "repo": "Twitter2Sina"
+        },
+        {
+          "author": "PinkyJie",
+          "repo": "LiangziDown"
+        },
+        {
+          "author": "PinkyJie",
+          "repo": "resume"
+        }
+      ]
+    }
+  },
+  "life": {
+    "location": {
+      "lat": 31.259068,
+      "lng": 121.456105
+    },
+    "photos": [
+      {
+        "src": "skating.jpg",
+        "alt": "Skating",
+        "text": "Street Skating"
+      },
+      {
+        "src": "archery.jpg",
+        "alt": "Archery",
+        "text": "Archery"
+      },
+      {
+        "src": "sea.jpg",
+        "alt": "Sea",
+        "text": "Travel in Mauritius"
+      }
+    ]
+  }
+}

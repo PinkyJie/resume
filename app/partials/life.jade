@@ -1,0 +1,32 @@
+section#life
+  .row
+    .col-md-1
+      .section-title
+        .section-icon
+          i.fa.fa-camera-retro
+        .title
+          h4= sections.life
+    .col-md-11
+      .box-wrapper
+        .row
+          .col-md-5
+            .map-wrapper
+              #map(data-lat= life.location.lat, data-lng= life.location.lng)
+          .col-md-7
+            .photo-wrapper
+              #photos.carousel.slide(data-ride='carousel')
+                ol.carousel-indicators
+                  - var n = 0
+                  while n < life.photos.length
+                    li(class= n === 0 ? "active" : "", data-target="#photos", data-slide-to= n)
+                    - n++
+                .carousel-inner
+                  each photo, index in life.photos
+                    .item(class= index === 0 ? "active" : "")
+                      img(src= "images/#{photo.src}", alt= photo.alt)
+                      .carousel-caption
+                        h3= photo.text
+                a.left.carousel-control(href='#photos', data-slide='prev')
+                  span.glyphicon.glyphicon-chevron-left
+                a.right.carousel-control(href='#photos', data-slide='next')
+                  span.glyphicon.glyphicon-chevron-right

@@ -1,0 +1,27 @@
+section#education
+  .row
+    .col-md-1
+      .section-title
+        .section-icon
+          i.fa.fa-book
+        .title
+          h4= sections.education
+    .col-md-11
+      .box-wrapper.edu-box
+        .row
+          each val in education.universities
+            .col-md-6
+              .edu-wrapper
+                .head
+                  .date-range= val.year
+                  h3= val.name
+                  h4= val.location
+                .body
+                  ul.round-rows
+                    li.round-row
+                      i.fa.fa-star
+                      span= val.major
+                    each item in val.items
+                      li.round-row
+                        i.fa(class= item.icon)
+                        span !{item.text}

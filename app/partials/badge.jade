@@ -1,0 +1,11 @@
+a.github-fork(target='_blank', href= badge.githubLink)
+  img(src='images/forkme_right_gray_6d6d6d.png', alt='Fork me on GitHub')
+.float-icons
+  .float-icon
+    a(href= badge.languageLink)
+      img(src='images/language.png', alt= badge.languageImageAlt)
+    span.label.label-info= badge.languageText
+  .float-icon
+    a(href= badge.pdfLink, download= badge.pdfName, title= badge.downloadPDFImageAlt)
+      img(src='images/download.png', alt= badge.downloadPDFImageAlt)
+    span.label.label-info= badge.downloadPDFText

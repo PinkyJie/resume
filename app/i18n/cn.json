@@ -1,0 +1,364 @@
+{
+  "html": {
+    "title": "介文博的简历",
+    "description": "简历 前端 Angular"
+  },
+  "sections": {
+    "header": "首页",
+    "about": "关于",
+    "education": "教育经历",
+    "employment": "工作经历",
+    "skill": "技能",
+    "project": "项目经历",
+    "life": "生活"
+  },
+  "badge": {
+    "githubLink": "https://github.com/PinkyJie/resume",
+    "languageImageAlt": "switch to English",
+    "languageText": "English",
+    "languageLink": "./",
+    "downloadPDFImageAlt": "下载PDF版",
+    "downloadPDFText": "下载",
+    "pdfLink": "介文博-前端-简历.pdf",
+    "pdfName": "介文博-前端-简历"
+  },
+  "header": {
+    "name": "介文博",
+    "title": "前端攻城狮"
+  },
+  "about": {
+    "socials": {
+      "blog": {
+        "linkTitle": "博客",
+        "url": "http://pinkyjie.com",
+        "icon": "fa-rss"
+      },
+      "github": {
+        "linkTitle": "Github",
+        "url": "https://github.com/PinkyJie",
+        "icon": "fa-github"
+      },
+      "twitter": {
+        "linkTitle": "Twitter",
+        "url": "https://twitter.com/PinkyJie",
+        "icon": "fa-twitter"
+      },
+      "weibo": {
+        "linkTitle": "微博",
+        "url": "http://weibo.com/pinkyway",
+        "icon": "fa-weibo"
+      },
+      "stackoverflow": {
+        "linkTitle": "StackOverflow",
+        "url": "https://stackoverflow.com/users/689948/pinkyjie",
+        "icon": "fa-stack-overflow"
+      }
+    },
+    "introduction": [
+      "本科数学专业+研究生计算机专业",
+      "近5年互联网行业经验",
+      "超过3年的专注前端开发经验",
+      "2年的Angular开发经验"
+    ],
+    "location": "中国上海",
+    "phone": "(+86) 15216761725",
+    "email": "pinkyjie.gn@gamil.com",
+    "hire": "雇了我吧！"
+  },
+  "education": {
+    "universities": [
+      {
+        "name": "华东理工大学",
+        "location": "中国上海",
+        "year": "2009.9-2012.3",
+        "major": "计算机应用技术[模式识别方向]",
+        "items": [
+          {
+            "icon": "fa-file-text",
+            "text": "发表在 <a target='_blank', href='http://dl.acm.org/citation.cfm?id=2514403'> Neurocomputing</a> 的论文"
+          },
+          {
+            "icon": "fa-file-text",
+            "text": "发表在 <a target='_blank', href='http://dl.acm.org/citation.cfm?id=2401511'> Knowledge-Based Systems</a> 的论文"
+          }
+        ]
+      },
+      {
+        "name": "扬州大学",
+        "location": "中国扬州",
+        "year": "2005.9-2009.6",
+        "major": "数学与应用数学",
+        "items": [
+          {
+            "icon": "fa-trophy",
+            "text": "每年都获得一等奖学金"
+          },
+          {
+            "icon": "fa-trophy",
+            "text": "全国数学建模大赛三等奖"
+          }
+        ]
+      }
+    ]
+  },
+  "employment": {
+    "jobs": [
+      {
+        "name": "GreenDot Shanghai",
+        "position": "前端工程师",
+        "year": "2014.5至今",
+        "description": [
+          "基于Angular的在线银行项目",
+          "覆盖桌面和移动的网页开发",
+          "前端项目架构的演进",
+          "搭建自动化工具链"
+        ]
+      },
+      {
+        "name": "三星电子（中国）研发中心",
+        "position": "软件工程师（云计算方向）",
+        "year": "2012.12-2014.4",
+        "description": [
+          "云计算相关项目开发",
+          "70%工作与前端相关"
+        ]
+      },
+      {
+        "name": "凌泽科技",
+        "position": "软件工程师 (Web/Mobile方向)",
+        "year": "2011.6-2012.9",
+        "description": [
+          "富交互的在线应用开发",
+          "接触了项目需求到开发到上线的整个流程",
+          "前后端全栈开发"
+        ]
+      }
+    ]
+  },
+  "skill": {
+    "programming": {
+      "text": "编程",
+      "children": [
+        {
+          "text": "前端",
+          "skills": [
+            {
+              "name": "Javascript",
+              "rating": 5
+            },
+            {
+              "name": "HTML",
+              "rating": 3
+            },
+            {
+              "name": "CSS",
+              "rating": 3
+            }
+          ]
+        },
+        {
+          "text": "后端（自动化脚本）",
+          "skills": [
+            {
+              "name": "Python",
+              "rating": 2
+            },
+            {
+              "name": "Node",
+              "rating": 1
+            }
+          ]
+        }
+      ]
+    },
+    "library": {
+      "text": "常用库",
+      "children": ["angular", "jade", "stylus", "grunt/gulp", "webpack", "ES6", "karma", "protractor"]
+    },
+    "tooling": {
+      "text": "工具",
+      "children": ["GIT", "Mac", "Atom"]
+    },
+    "language": {
+      "text": "英语",
+      "children": {
+        "CET4": {
+          "name": "英语四级",
+          "text": "566"
+        },
+        "CET6": {
+          "name": "英语六级",
+          "text": "459"
+        },
+        "TOEIC": {
+          "name": "托业",
+          "text": "725"
+        },
+        "oral": {
+          "name": "口语/书写",
+          "text": "熟练"
+        }
+      }
+    }
+  },
+  "project": {
+    "col1": [
+      {
+        "icon": "fa-github",
+        "name": "angular1-webpack-starter",
+        "year": "2015.8至今",
+        "library": ["angular", "ES6", "webpack", "ui-router"],
+        "description": [
+          "全组件式(directive)开发",
+          "100%单元测试覆盖",
+          "跨浏览器E2E测试(Sauce Labs)",
+          "模块按需加载(LazyLoad)",
+          "TravisCI自动化测试部署"
+        ],
+        "github": {
+          "author": "PinkyJie",
+          "repo": "angular1-webpack-starter"
+        },
+        "links": [
+          {
+            "title": "Demo",
+            "icon": "fa-globe",
+            "url": "http://pinkyjie.com/angular1-webpack-starter/#/"
+          }
+        ]
+      },
+      {
+        "icon": "fa-credit-card",
+        "name": "GoBank/GreenDot",
+        "year": "2014.5至今",
+        "library": ["angular", "stylus", "jade"],
+        "description": [
+          "组件化的推广",
+          "代码风格推广",
+          "从ngRoute到ui-router的迁移",
+          "angular 1.2到1.5的升级",
+          "grunt构建流程优化(20min -> 2min)",
+          "自动化一键发布工具构建"
+        ],
+        "links": [
+          {
+            "title": "GoBank Site",
+            "icon": "fa-globe",
+            "url": "https://m.gobank.com"
+          },
+          {
+            "title": "GreenDot Site",
+            "icon": "fa-globe",
+            "url": "https://m.greendot.com"
+          }
+        ]
+      }
+    ],
+    "col2": [
+      {
+        "icon": "fa-cloud",
+        "name": "Cloud Resilience System",
+        "year": "2013.1-2013.12",
+        "library": ["SVG", "web.py", "MongoDB", "AWS"],
+        "description": [
+          "给云设施制造模拟灾难",
+          "利用SVG实现数据可视化"
+        ]
+      },
+      {
+        "icon": "fa-sitemap",
+        "name": "亲的试衣间",
+        "year": "2011.6-2012.3",
+        "library": ["PHP", "Flash", "AR"],
+        "description": [
+          "利用AR在淘宝实现虚拟试衣",
+          "2012年“赢在淘宝”大赛TOP 10"
+        ],
+        "links": [
+          {
+            "title": "Video Demo",
+            "icon": "fa-video-camera",
+            "url": "http://v.youku.com/v_show/id_XNjU2NjEyMjYw.html"
+          }
+        ]
+      },
+      {
+        "icon": "fa-magic",
+        "name": "互动许愿树",
+        "year": "2012.6-2012.7",
+        "library": ["Node", "SVG", "socket.io"],
+        "description": [
+          "SVG实现的许愿树动画",
+          "可与iPad互动随时生成新树叶卡片",
+          "可与iPad互动进行卡片抽奖"
+        ],
+        "links": [
+          {
+            "title": "Video Demo",
+            "icon": "fa-video-camera",
+            "url": "http://v.youku.com/v_show/id_XNDIzNTM4MTg0.html"
+          },
+          {
+            "title": "Video Demo",
+            "icon": "fa-video-camera",
+            "url": "http://v.youku.com/v_show/id_XNDIzMTM3Njky.html"
+          },
+          {
+            "title": "Video Demo",
+            "icon": "fa-video-camera",
+            "url": "http://v.youku.com/v_show/id_XNDIzMTIzNDQ4.html"
+          }
+        ]
+      }
+    ],
+    "others": {
+      "text": "其他个人项目",
+      "year": "2011.1至今",
+      "repos": [
+        {
+          "author": "PinkyJie",
+          "repo": "generator-aio-angular"
+        },
+        {
+          "author": "PinkyJie",
+          "repo": "Trister"
+        },
+        {
+          "author": "PinkyJie",
+          "repo": "Twitter2Sina"
+        },
+        {
+          "author": "PinkyJie",
+          "repo": "LiangziDown"
+        },
+        {
+          "author": "PinkyJie",
+          "repo": "resume"
+        }
+      ]
+    }
+  },
+  "life": {
+    "location": {
+      "lat": 31.259068,
+      "lng": 121.456105
+    },
+    "photos": [
+      {
+        "src": "skating.jpg",
+        "alt": "Skating",
+        "text": "轮滑刷街"
+      },
+      {
+        "src": "archery.jpg",
+        "alt": "Archery",
+        "text": "射箭"
+      },
+      {
+        "src": "sea.jpg",
+        "alt": "Sea",
+        "text": "毛里求斯的旅行"
+      }
+    ]
+  }
+}

@@ -2,14 +2,6 @@
 (function($){
     'use strict';
     function init() {
-        // chinese/english switch
-        $('li.inactive img')
-            .mouseenter(function(){
-                $(this).removeClass('gray-img');
-            })
-            .mouseleave(function(){
-                $(this).addClass('gray-img');
-            });
         // affix navbar
         $(window).scroll(function(){
             var navAnchor = $('.cv-title').offset().top;
@@ -35,14 +27,16 @@
             }, 1500, 'easeInOutExpo');
         }
         // map
+        var lat = $('#map').data('lat');
+        var lng = $('#map').data('lng');
         var map = new GMaps({
             div: '#map',
-            lat: 31.259068,
-            lng: 121.456105
+            lat: lat,
+            lng: lng
         });
         map.addMarker({
-            lat: 31.259068,
-            lng: 121.456105,
+            lat: lat,
+            lng: lng,
             title: 'It\'s Me!'
         });
     }

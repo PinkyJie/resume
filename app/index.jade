@@ -1,0 +1,59 @@
+doctype html
+html
+  <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+  <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+  <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title= html.title
+    meta(name='description', content= html.description)
+    meta(name='viewport', content='width=device-width')
+    // build:css(.tmp) styles/main.css 
+    link(rel='stylesheet', href='styles/main.css')
+    // endbuild 
+    script(src='http://maps.google.com/maps/api/js?sensor=true')
+  body(data-spy="scroll", data-target=".nav-menu", data-offset="60")
+    include ./partials/badge
+    .container
+      .resume-wrapper
+        .resume
+          include ./partials/header
+          include ./partials/about
+          include ./partials/education
+          include ./partials/employment
+          include ./partials/skill
+          include ./partials/project
+          include ./partials/life
+    // build:js scripts/vendor.js 
+    // bower:js 
+    script(src='bower_components/jquery/jquery.js')
+    script(src='bower_components/jquery.easing/js/jquery.easing.js')
+    script(src='bower_components/gmaps/gmaps.js')
+    // endbower 
+    // endbuild 
+    script.
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-46767820-1');ga('send','pageview');
+    // build:js scripts/main.js 
+    script(src='scripts/main.js')
+    // endbuild 
+    // build:js scripts/plugins.js 
+    script(src='bower_components/sass-bootstrap/js/affix.js')
+    script(src='bower_components/sass-bootstrap/js/alert.js')
+    script(src='bower_components/sass-bootstrap/js/dropdown.js')
+    script(src='bower_components/sass-bootstrap/js/tooltip.js')
+    script(src='bower_components/sass-bootstrap/js/modal.js')
+    script(src='bower_components/sass-bootstrap/js/transition.js')
+    script(src='bower_components/sass-bootstrap/js/button.js')
+    script(src='bower_components/sass-bootstrap/js/popover.js')
+    script(src='bower_components/sass-bootstrap/js/carousel.js')
+    script(src='bower_components/sass-bootstrap/js/scrollspy.js')
+    script(src='bower_components/sass-bootstrap/js/collapse.js')
+    script(src='bower_components/sass-bootstrap/js/tab.js')
+    // endbuild 

@@ -1,0 +1,55 @@
+section#skill
+  .row
+    .col-md-1
+      .section-title
+        .section-icon
+          i.fa.fa-wrench
+        .title
+          h4= sections.skill
+    .col-md-11
+      .box-wrapper
+        .row
+          .col-md-6
+            .pro-skills
+              .cat-title
+                i.fa.fa-keyboard-o
+                span= skill.programming.text
+              .skill-body
+                each item in skill.programming.children
+                  .sub-body
+                    .sub-cat-title
+                      i.fa.fa-chevron-circle-right
+                      span= item.text
+                    ul
+                      each skill in item.skills
+                        li
+                          span= skill.name
+                          .rating
+                            - var n = 0
+                            while n < skill.rating
+                              i.fa.fa-star
+                              - n++
+          .col-md-6
+            .lib-skills
+              .cat-title
+                i.fa.fa-puzzle-piece
+                span= skill.library.text
+              .skill-body
+                each val in skill.library.children
+                  span.label.label-default= val
+            .tooling-skills
+              .cat-title
+                i.fa.fa-puzzle-piece
+                span= skill.tooling.text
+              .skill-body
+                each val in skill.tooling.children
+                  span.label.label-default= val
+            .lang-skills
+              .cat-title
+                i.fa.fa-microphone
+                span= skill.language.text
+              .skill-body
+                ul
+                  each item in skill.language.children
+                    li
+                      span #{item.name}: #{item.text}

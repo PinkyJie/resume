@@ -1,0 +1,16 @@
+section#header
+  .cv-title
+    .row
+      .col-md-4
+        .head-title
+          h1= header.name
+          h3= header.title
+      .col-md-8
+        .nav-menu
+          ul.nav.nav-pills.normal
+            each val, key in sections
+              li(class= key === "header" ? "active" : "")
+                a(href="##{key}")= val
+          select.nav.nav-pills.dropdown.form-control
+            each val, key in sections
+              option(value="##{key}")= val

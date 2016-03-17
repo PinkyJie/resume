@@ -1,0 +1,22 @@
+section#employment
+  .row
+    .col-md-1
+      .section-title
+        .section-icon
+          i.fa.fa-users
+        .title
+          h4= sections.employment
+    .col-md-11
+      .box-wrapper.emp-box
+        .row.timeline-wrapper
+          .col-md-12
+            each job in employment.jobs
+              .emp-item
+                .emp-wrapper
+                  .head
+                    .date-range= job.year
+                    h3= job.name
+                    h4= job.position
+                  .body
+                    each item in job.description
+                      span= item
