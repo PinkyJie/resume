@@ -4,6 +4,8 @@ $fa-font-path: '../bower_components/font-awesome/fonts/';
 @import 'sass-bootstrap/lib/bootstrap';
 @import 'font-awesome/scss/font-awesome';
 
+$page-split: 900px;
+
 /* google font */
 @import url(http://fonts.useso.com/css?family=Open+Sans+Condensed:700);
 
@@ -27,14 +29,14 @@ $fa-font-path: '../bower_components/font-awesome/fonts/';
 }
 
 .center-on-mobile {
-  @media all and (max-width: 992px) {
+  @media all and (max-width: $page-split) {
     text-align: center;
   }
 }
 
 /* page */
 .social-icons, .pro-icons {
-  @media all and (max-width: 992px) {
+  @media all and (max-width: $page-split) {
     padding-bottom: 10px;
   }
   text-align: center;
@@ -71,7 +73,7 @@ $fa-font-path: '../bower_components/font-awesome/fonts/';
 }
 
 .round-rows {
-  @media all and (max-width: 992px) {
+  @media all and (max-width: $page-split) {
     padding-left: 0;
   }
   margin: 0;
@@ -97,7 +99,7 @@ $fa-font-path: '../bower_components/font-awesome/fonts/';
     span {
       margin-left: 5px;
     }
-    @media all and (max-width: 992px) {
+    @media all and (max-width: $page-split) {
       font-size: 14px;
       border-radius: 15px;
     }
@@ -134,7 +136,7 @@ body {
   @media all and (min-width: 1200px) {
     width: 1024px;
   }
-  @media all and (max-width: 992px) {
+  @media all and (max-width: $page-split) {
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -166,7 +168,7 @@ section {
       border-style: solid;
       border-width: 10px 10px 10px 0;
       border-color: transparent #fff transparent transparent;
-      @media all and (max-width: 992px) {
+      @media all and (max-width: $page-split) {
         top: -10px;
         left: 48%;
         border-width: 0 10px 10px 10px;
@@ -241,7 +243,7 @@ section {
     background-color: #f8fafa;
     padding: 5px;
     border-radius: 0 0 5px 5px;
-    @media all and (max-width: 992px) {
+    @media all and (max-width: $page-split) {
       border-radius: 5px;
     }
     ul {
@@ -250,10 +252,10 @@ section {
     .nav {
       text-align: center;
       &.normal {
-        @media all and (min-width: 992px) {
+        @media all and (min-width: $page-split) {
           display: block;
         }
-        @media all and (max-width: 992px) {
+        @media all and (max-width: $page-split) {
           display: none;
         }
       }
@@ -280,10 +282,10 @@ section {
         margin: 0 auto;
         width: 80%;
         height: 40px;
-        @media all and (min-width: 992px) {
+        @media all and (min-width: $page-split) {
           display: none;
         }
-        @media all and (max-width: 992px) {
+        @media all and (max-width: $page-split) {
           display: block;
         }
         &.splited {
@@ -310,7 +312,7 @@ section {
   }
 
   .lang-icons {
-    @media all and (max-width: 992px) {
+    @media all and (max-width: $page-split) {
       padding-top: 5px;
     }
     text-align: center;
@@ -323,7 +325,7 @@ section {
         img {
           width: 32px;
         }
-        @media all and (max-width: 992px) {
+        @media all and (max-width: $page-split) {
           margin-right: 5px;
         }
       }
@@ -350,7 +352,7 @@ $img-size: 120px;
       overflow: hidden;
       border-radius: $img-size;
     }
-    @media all and (max-width: 992px) {
+    @media all and (max-width: $page-split) {
       margin: auto;
     }
   }
@@ -399,7 +401,7 @@ $img-size: 120px;
 #education {
   .edu-box > .row {
     > .col-md-6:nth-child(2) {
-      @media all and (max-width: 992px) {
+      @media all and (max-width: $page-split) {
         margin-top: 10px;
       }
     }
@@ -413,7 +415,7 @@ $img-size: 120px;
     }
   }
   .date-range {
-    @media all and (max-width: 992px) {
+    @media all and (max-width: $page-split) {
       float: none;
       margin-bottom: 1px;
     }
@@ -472,7 +474,7 @@ $img-size: 120px;
     }
   }
   .date-range {
-    @media all and (max-width: 992px) {
+    @media all and (max-width: $page-split) {
       float: none;
       margin-bottom: 1px;
     }
@@ -573,7 +575,7 @@ $img-size: 120px;
     }
     .date-range {
       font-size: 12px;
-      @media all and (max-width: 992px) {
+      @media all and (max-width: $page-split) {
         float: none;
         margin-top: 1px;
       }
@@ -629,7 +631,7 @@ $img-size: 120px;
     }
   }
   .box-wrapper > .row > .col-md-4:nth-child(n+2) {
-    @media all and (max-width: 992px) {
+    @media all and (max-width: $page-split) {
       margin-top: 10px;
     }
   }
@@ -663,7 +665,7 @@ $img-size: 120px;
     right: 0;
     border: 0;
   }
-  @media all and (max-width: 992px) {
+  @media all and (max-width: $page-split) {
     display: none;
   }
 }
@@ -687,7 +689,7 @@ $img-size: 120px;
       box-shadow: 2px 2px 0 0 #d8d8d8;
     }
   }
-  @media all and (max-width: 992px) {
+  @media all and (max-width: $page-split) {
     display: none;
   }
 }
