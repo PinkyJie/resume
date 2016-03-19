@@ -26,6 +26,12 @@ $fa-font-path: '../bower_components/font-awesome/fonts/';
   padding: 0;
 }
 
+.center-on-mobile {
+  @media all and (max-width: 992px) {
+    text-align: center;
+  }
+}
+
 /* page */
 .social-icons, .pro-icons {
   @media all and (max-width: 992px) {
@@ -482,9 +488,17 @@ $img-size: 120px;
     li {
       > span {
         margin-top: -3px;
-        float: left;
-        width: 150px;
       }
+      > .rating {
+        float: right;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .lang-skills {
+    ul > li {
+      line-height: 25px;
     }
   }
   .cat-title {
@@ -575,12 +589,14 @@ $img-size: 120px;
   }
   .body {
     .pro-labels {
-      padding-bottom: 5px;
+      padding-bottom: 8px;
       border-bottom: 1px solid #cccccc;
       margin-bottom: 5px;
       span.label {
+        display: inline-block;
         line-height: 22px;
         margin-right: 5px;
+        margin-top: 5px;
       }
     }
     p {

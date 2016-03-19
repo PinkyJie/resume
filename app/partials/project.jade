@@ -13,10 +13,9 @@ mixin project-gen(items)
         .pro-labels
           each lib in item.library
             span.label.label-primary= lib
-        p
-          ul
-            each val in item.description
-              li= val
+        ul
+          each val in item.description
+            li= val
         if item.github || item.links
           .pro-icons
             if item.github
@@ -55,10 +54,9 @@ section#project
                   .col-md-2
                     .date-range= project.others.year
               .body
-                p
-                  ul
-                    each item in project.others.repos
-                      li
-                        p= item.repo
-                        .github-star
-                          iframe(src="http://ghbtns.com/github-btn.html?user=#{item.author}&repo=#{item.repo}&type=watch&count=true&size=large", allowtransparency="true", frameborder="0", scrolling="0", width="125", height="30")
+                ul
+                  each item in project.others.repos
+                    li
+                      p= item.repo
+                      .github-star
+                        iframe(src="http://ghbtns.com/github-btn.html?user=#{item.author}&repo=#{item.repo}&type=watch&count=true&size=large", allowtransparency="true", frameborder="0", scrolling="0", width="125", height="30")

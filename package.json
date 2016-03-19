@@ -30,7 +30,7 @@
     "time-grunt": "~0.2.0"
   },
   "scripts": {
-    "start": "grunt serve",
+    "start": "grunt build && grunt serve",
     "build": "grunt build",
     "bower": "bower install"
   },
