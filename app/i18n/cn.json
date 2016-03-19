@@ -24,7 +24,8 @@
   },
   "header": {
     "name": "介文博",
-    "title": "前端攻城狮"
+    "title": "前端攻城狮",
+    "languageIcon": "en.png"
   },
   "about": {
     "socials": {

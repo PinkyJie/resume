@@ -24,7 +24,8 @@
   },
   "header": {
     "name": "Wenbo Jie",
-    "title": "Front-end Developer"
+    "title": "Front-end Developer",
+    "languageIcon": "cn.png"
   },
   "about": {
     "socials": {

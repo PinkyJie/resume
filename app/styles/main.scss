@@ -235,6 +235,15 @@ section {
       text-shadow: 0 2px 0 #00789f;
       @extend .title-font;
     }
+    .head-lang {
+      display: none;
+      @media all and (max-width: $page-split) {
+        display: block;
+        top: 20px;
+        right: 20px;
+        position: absolute;
+      }
+    }
   }
 
   .nav-menu {

@@ -5,6 +5,9 @@ section#header
         .head-title
           h1= header.name
           h3= header.title
+          .head-lang
+            a(href= badge.languageLink)
+                img(src='images/#{header.languageIcon}', alt= badge.languageImageAlt)
       .col-md-8
         .nav-menu
           ul.nav.nav-pills.normal
