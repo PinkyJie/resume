@@ -1,4 +1,4 @@
-MyResume
+MyResume [![Travis](https://img.shields.io/travis/PinkyJie/resume.svg?style=flat-square)](https://travis-ci.org/PinkyJie/resume)
 ========
 
 [http://pinkyjie.com/resume](http://pinkyjie.com/resume)
