@@ -179,9 +179,9 @@ module.exports = function (grunt) {
         },
 
         // Automatically inject Bower components into the HTML file
-        'bower-install': {
+        bowerInstall: {
             app: {
-                jade: '<%= yeoman.app %>/*.jade',
+                src: ['<%= yeoman.app %>/*.jade'],
                 ignorePath: '<%= yeoman.app %>/'
             }
         },
