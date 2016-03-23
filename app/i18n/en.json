@@ -76,11 +76,21 @@
         "items": [
           {
             "icon": "fa-file-text",
-            "text": "Publication in <a target='_blank', href='http://dl.acm.org/citation.cfm?id=2514403'> Neurocomputing</a>"
+            "textBefore": "Publication in ",
+            "link": {
+              "url": "http://dl.acm.org/citation.cfm?id=2514403",
+              "text": "Neurocomputing"
+            },
+            "textAfter": ""
           },
           {
             "icon": "fa-file-text",
-            "text": "Publication in <a target='_blank', href='http://dl.acm.org/citation.cfm?id=2401511'> Knowledge-Based Systems</a>"
+            "textBefore": "Publication in ",
+            "link": {
+              "url": "http://dl.acm.org/citation.cfm?id=2401511",
+              "text": "Knowledge-Based Systems"
+            },
+            "textAfter": ""
           }
         ]
       },

@@ -76,11 +76,21 @@
         "items": [
           {
             "icon": "fa-file-text",
-            "text": "发表在 <a target='_blank', href='http://dl.acm.org/citation.cfm?id=2514403'> Neurocomputing</a> 的论文"
+            "textBefore": "发表在 ",
+            "link": {
+              "url": "http://dl.acm.org/citation.cfm?id=2514403",
+              "text": "Neurocomputing"
+            },
+            "textAfter": " 的论文"
           },
           {
             "icon": "fa-file-text",
-            "text": "发表在 <a target='_blank', href='http://dl.acm.org/citation.cfm?id=2401511'> Knowledge-Based Systems</a> 的论文"
+            "textBefore": "发表在 ",
+            "link": {
+              "url": "http://dl.acm.org/citation.cfm?id=2401511",
+              "text": "Knowledge-Based Systems"
+            },
+            "textAfter": " 的论文"
           }
         ]
       },

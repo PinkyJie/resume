@@ -24,4 +24,9 @@ section#education
                     each item in val.items
                       li.round-row
                         i.fa(class= item.icon)
-                        span !{item.text}
+                        if item.link
+                          span #{item.textBefore}
+                            a(target="_blank", href= item.link.url)= item.link.text
+                            |#{item.textAfter}
+                        else
+                          span= item.text
