@@ -371,5 +371,24 @@
         "text": "Travel in Mauritius"
       }
     ]
+  },
+  "pdf": {
+    "fonts": {
+      "title": {
+        "type": "standard",
+        "name": "Courier"
+      },
+      "text": {
+        "type": "standard",
+        "name": "Helvetica"
+      }
+    },
+    "online": {
+      "text": "Online version: ",
+      "url": "http://pinkyjie.com/resume"
+    },
+    "github": {
+      "text": "Check more on my Github: "
+    }
   }
 }

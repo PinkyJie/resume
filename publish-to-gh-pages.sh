@@ -3,6 +3,7 @@ set -ev
 
 # run build
 npm run build
+npm run pdf
 
 # push dist folder to github
 cd dist

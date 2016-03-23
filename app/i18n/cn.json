@@ -371,5 +371,26 @@
         "text": "毛里求斯的旅行"
       }
     ]
+  },
+  "pdf": {
+    "fonts": {
+      "title": {
+        "type": "embeded",
+        "path": "/fonts/Kaiti.ttf",
+        "name": "kaiti"
+      },
+      "text": {
+        "type": "embeded",
+        "path": "/fonts/Kaiti.ttf",
+        "name": "kaiti"
+      }
+    },
+    "online": {
+      "text": "在线版: ",
+      "url": "http://pinkyjie.com/resume/cn.html"
+    },
+    "github": {
+      "text": "更多项目请查看我的Github: "
+    }
   }
 }
