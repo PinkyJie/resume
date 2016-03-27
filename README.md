@@ -11,23 +11,24 @@ Built with [Yeoman](http://yeoman.io/)
 ### JSON Data Driven
 
 * All HTML templates are put in `app/partials`, these files are just layouts with variables.
-* PDF layout is defined in `app/pdf/pdf.js`.
+* PDF layout is defined in `app/pdf/pdf.py`.
 * All Data for different languages are put in `app/i18n`, these files are just plain JSON.
 
 ### One data source, multiple outputs (HTML/PDF)
 
 * Use [jade](https://github.com/jadejs/jade) to generate HTML.
-* Use [pdfkit](https://github.com/devongovett/pdfkit) to generate PDF.
+* <del>Use [pdfkit](https://github.com/devongovett/pdfkit) to generate PDF.</del> (pdfkit has some issues for displaying Chinese characters [devongovett/pdfkit#144](https://github.com/devongovett/pdfkit/issues/114))
+* Use [pyfpdf](https://github.com/reingart/pyfpdf) (a python library) to generate PDF.
 
 ### Build
 
-* Install Node and Ruby
-* `npm install -g grunt-cli` and `gem install compass`
+* Install Node, Ruby(for sass compiling), Python(for PDF generation)
+* `npm install -g grunt-cli` and `gem install compass` and `pip install fpdf`
 * `npm run bower`
 * `npm install`
 * `npm start` for live reload preview
 * `npm run build` to generate HTML in `dist` folder
-* `npm run pdf` to generate PDF files in `dist` folder
+* `python app/pdf/pdf.py` to generate PDF files in `dist` folder
 
 ### Generate your own Resume
 

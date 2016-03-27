@@ -3,7 +3,7 @@ set -ev
 
 # run build
 npm run build
-npm run pdf
+python app/pdf/pdf.py
 
 # push dist folder to github
 cd dist
