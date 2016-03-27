@@ -9,7 +9,7 @@ before_install:
   - npm install -g grunt-cli
 install:
   - gem install compass
-  - pip install fpdf
+  - pip install --user fpdf
   - npm install
   - npm run bower
 script:
