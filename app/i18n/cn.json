@@ -376,13 +376,13 @@
     "fonts": {
       "title": {
         "type": "embeded",
-        "path": "/fonts/Kaiti.ttf",
-        "name": "kaiti"
+        "path": "fonts/Microsoft Yahei.ttf",
+        "name": "yahei"
       },
       "text": {
         "type": "embeded",
-        "path": "/fonts/Kaiti.ttf",
-        "name": "kaiti"
+        "path": "fonts/Microsoft Yahei.ttf",
+        "name": "yahei"
       }
     },
     "online": {
