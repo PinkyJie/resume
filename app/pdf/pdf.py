@@ -102,10 +102,6 @@ for lang in all_langs:
     pdf = FPDF('P', 'mm', 'A4')
     pdf.set_margins(page_size['left'], page_size['top'])
     pdf.add_page()
-    # set metadata
-    # pdf.set_title(data['badge']['pdfName'])
-    # pdf.set_author(data['header']['name'])
-    # pdf.set_subject(data['html']['title'])
     # font defination
     title_font_data = data['pdf']['fonts']['title']
     text_font_data = data['pdf']['fonts']['text']
