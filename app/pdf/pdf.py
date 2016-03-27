@@ -70,7 +70,7 @@ def draw_func_employment(pdf_instance, job, left, top):
     pdf_instance.cell(1, line_height['text'] + 1, job['year'], ln=2)
     pdf_instance.set_text_color(black)
     for desc in job['description']:
-        pdf_instance.ellipse(pdf_instance.get_x() + 1, pdf_instance.get_y() + 1, 1.5, 1.5, 'F')
+        pdf_instance.ellipse(pdf_instance.get_x() + 1, pdf_instance.get_y() + 1.5, ellipse['size'], ellipse['size'], 'F')
         pdf_instance.cell(ellipse['margin'])
         pdf_instance.cell(1, line_height['text'], desc, ln=2)
         pdf_instance.set_x(left)
@@ -88,7 +88,7 @@ def draw_func_project(pdf_instance, proj, left, top):
     pdf_instance.cell(1, line_height['text'], u'[ ' + u', '.join(proj['library']) + ' ]', ln=2)
     for desc in proj['description']:
         pdf_instance.set_x(left)
-        pdf_instance.ellipse(pdf_instance.get_x() + 1, pdf_instance.get_y() + 1, 1.5, 1.5, 'F')
+        pdf_instance.ellipse(pdf_instance.get_x() + 1, pdf_instance.get_y() + 1.5, ellipse['size'], ellipse['size'], 'F')
         pdf_instance.cell(ellipse['margin'])
         pdf_instance.cell(1, line_height['text'], desc, ln=2)
     pdf_instance.ln(page_size['section_margin'])
@@ -155,7 +155,7 @@ for lang in all_langs:
             pdf.set_x(page_size['left'] + page_size['section_indent'])
         else:
             pdf.set_x(page_size['middle_x'])
-        pdf.ellipse(pdf.get_x(), pdf.get_y() + 1, ellipse['size'], ellipse['size'], 'F')
+        pdf.ellipse(pdf.get_x(), pdf.get_y() + 1.1, ellipse['size'], ellipse['size'], 'F')
         pdf.cell(ellipse['margin'])
         pdf.cell(1, line_height['text'] - 1, desc, ln=2)
     pdf.ln(page_size['section_margin'])
@@ -180,7 +180,7 @@ for lang in all_langs:
         pdf.set_y(univ_y)
         for item in univ['items']:
             pdf.set_x(page_size['middle_x'])
-            pdf.ellipse(pdf.get_x(), pdf.get_y() + 1, ellipse['size'], ellipse['size'], 'F')
+            pdf.ellipse(pdf.get_x(), pdf.get_y() + 1.5, ellipse['size'], ellipse['size'], 'F')
             pdf.cell(2)
             if 'link' in item:
                 pdf.cell(pdf.get_string_width(item['textBefore']), line_height['text'] - 1, item['textBefore'], ln=0)
@@ -205,12 +205,12 @@ for lang in all_langs:
     pdf.set_font(text_font, '', font_size['text'])
     for item in data['skill']['programming']['children']:
         pdf.set_x(page_size['left'] + page_size['section_indent'])
-        pdf.ellipse(pdf.get_x(), pdf.get_y() + 1, ellipse['size'], ellipse['size'], 'F')
+        pdf.ellipse(pdf.get_x(), pdf.get_y() + 1.5, ellipse['size'], ellipse['size'], 'F')
         pdf.cell(ellipse['margin'])
         skill_names = [i['name'] for i in item['skills']]
         pdf.cell(1, line_height['text'] - 1, item['text'] + u': ' + ', '.join(skill_names), ln=2)
     pdf.set_x(page_size['left'] + page_size['section_indent'])
-    pdf.ellipse(pdf.get_x(), pdf.get_y() + 1, ellipse['size'], ellipse['size'], 'F')
+    pdf.ellipse(pdf.get_x(), pdf.get_y() + 1.5, ellipse['size'], ellipse['size'], 'F')
     pdf.cell(ellipse['margin'])
     pdf.cell(1, line_height['text'] - 1, data['skill']['library']['text'] + u': ' + ', '.join(data['skill']['library']['children']), ln=2)
     pdf.ln(page_size['section_margin'])
