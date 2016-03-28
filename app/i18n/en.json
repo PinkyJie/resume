@@ -64,7 +64,8 @@
     "location": "Shanghai, China",
     "phone": "(+86) 15216761725",
     "email": "pinkyjie.gn@gamil.com",
-    "hire": "Available for hire!"
+    "age": "1987",
+    "sex": "Male"
   },
   "education": {
     "universities": [
@@ -188,7 +189,7 @@
     },
     "tooling": {
       "text": "Tooling",
-      "children": ["GIT", "Mac", "Atom"]
+      "children": ["GIT", "Mac", "Atom", "Scrum"]
     },
     "language": {
       "text": "English",
