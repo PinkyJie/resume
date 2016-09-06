@@ -116,9 +116,19 @@
   "employment": {
     "jobs": [
       {
+        "name": "支付宝",
+        "position": "高级前端工程师",
+        "year": "2016.6至今",
+        "description": [
+          "基于React的商家入驻平台",
+          "关注开发测试流程自动化",
+          "前后端协作的工具化"
+        ]
+      },
+      {
         "name": "GreenDot Shanghai",
         "position": "前端工程师",
-        "year": "2014.5至今",
+        "year": "2014.5-2016.5",
         "description": [
           "基于Angular的在线银行项目",
           "覆盖桌面和移动的网页开发",

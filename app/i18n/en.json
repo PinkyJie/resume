@@ -116,9 +116,19 @@
   "employment": {
     "jobs": [
       {
+        "name": "Alipay",
+        "position": "Senior Front-end Engineer",
+        "year": "2016.6-Now",
+        "description": [
+          "React-based retailer move-in system",
+          "Focus on workflow automation",
+          "Improve communication between client/server"
+        ]
+      },
+      {
         "name": "GreenDot Shanghai",
         "position": "Front-end Engineer",
-        "year": "2014.5-Now",
+        "year": "2014.5-2016.5",
         "description": [
           "Angular-based online banking system",
           "Cover both desktop and mobile web",
