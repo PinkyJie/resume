@@ -233,7 +233,7 @@
         "description": [
           "Pure directive based development",
           "100% unit test coverage",
-          "cross browser E2E test with Sauce Labs",
+          "Cross browser E2E test with Sauce Labs",
           "Lazy Load modules",
           "Continuous Integration with TravisCI"
         ],
@@ -252,14 +252,14 @@
       {
         "icon": "fa-credit-card",
         "name": "GoBank/GreenDot",
-        "year": "2014.5-Now",
+        "year": "2014.5-2016.5",
         "library": ["angular", "stylus", "jade"],
         "description": [
           "Promote component based development",
           "Promote standard coding style",
-          "migrate from ngRoute to ui-router",
-          "migrate from angular 1.2 to 1.5",
-          "improve grunt build (20min -> 2min)",
+          "Migrate from ngRoute to ui-router",
+          "Migrate from angular 1.2 to 1.5",
+          "Improve grunt build (20min -> 2min)",
           "Build one-click deployment tooling"
         ],
         "links": [
