@@ -39,7 +39,9 @@ Built with [Yeoman](http://yeoman.io/)
 ### Host resume on your Github Pages
 
 * Use your github account to access [TravisCI](https://travis-ci.org/), activate your repo.
-* Update `env` in `.travis.yml` (check my blog: [用TravisCI来做持续集成](http://pinkyjie.com/2016/02/27/continuous-integration-with-travis-ci/))
+* Add 2 Environment Variables to your TravisCI project settings page:
+    * `GitHub_REF`: your Github resume repo URL, like `github.com/PinkyJie/resume.git`
+    * `Github_TOKEN`: generate a personal access token for your Github account on [settings page](https://github.com/settings/tokens)
 * Push code to your forked repo, then Travis will automatically deploy build on your Github Pages.
 
 
