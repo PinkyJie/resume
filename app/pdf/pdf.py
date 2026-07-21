@@ -106,11 +106,11 @@ for lang in all_langs:
     title_font_data = data['pdf']['fonts']['title']
     text_font_data = data['pdf']['fonts']['text']
     # font for title
-    if title_font_data['type'] == 'embeded':
+    if title_font_data['type'] == 'embedded':
         pdf.add_font(title_font_data['name'], '', os.path.abspath('.') + '/app/pdf/' + title_font_data['path'], uni=True)
     title_font = title_font_data['name']
     # font for plain text
-    if text_font_data['type'] == 'embeded':
+    if text_font_data['type'] == 'embedded':
         pdf.add_font(text_font_data['name'], '', os.path.abspath('.') + '/app/pdf/' + text_font_data['path'], uni=True)
     text_font = text_font_data['name']
     # header section
